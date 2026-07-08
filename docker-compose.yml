@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  securitybot:
+    build: .
+    container_name: securitybot
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./backups:/app/backups
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+        reservations:
+          memory: 256M

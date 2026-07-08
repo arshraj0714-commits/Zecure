@@ -1,0 +1,65 @@
+{
+  "bot": {
+    "name": "SecurityBot Enterprise",
+    "description": "Enterprise-grade Discord security bot",
+    "online": "Bot is now online",
+    "offline": "Bot is shutting down"
+  },
+  "commands": {
+    "ban": "Ban a member",
+    "kick": "Kick a member",
+    "mute": "Timeout a member",
+    "warn": "Warn a member",
+    "purge": "Bulk delete messages",
+    "lock": "Lock a channel",
+    "unlock": "Unlock a channel"
+  },
+  "permissions": {
+    "missing": "You don't have permission to use this command",
+    "admin_required": "Administrator permission required",
+    "moderator_required": "Moderator permission required"
+  },
+  "security": {
+    "antinuke_triggered": "Anti-Nuke protection triggered",
+    "antiraid_triggered": "Anti-Raid protection triggered",
+    "automod_violation": "AutoMod violation detected",
+    "antispam_triggered": "AntiSpam protection triggered",
+    "antitamper_violation": "AntiTamper violation detected",
+    "user_quarantined": "User has been quarantined",
+    "user_banned": "User has been banned",
+    "raid_detected": "Raid detected",
+    "lockdown_initiated": "Server lockdown initiated",
+    "lockdown_lifted": "Server lockdown lifted"
+  },
+  "verification": {
+    "title": "Verification Required",
+    "description": "Click the button below to verify",
+    "verified": "You have been verified",
+    "already_verified": "You are already verified",
+    "failed": "Verification failed",
+    "too_new": "Your account is too new"
+  },
+  "errors": {
+    "unknown": "An unknown error occurred",
+    "missing_permissions": "I don't have permission to do that",
+    "user_not_found": "User not found",
+    "channel_not_found": "Channel not found",
+    "role_not_found": "Role not found"
+  },
+  "settings": {
+    "prefix_updated": "Prefix updated",
+    "language_updated": "Language updated",
+    "settings_reset": "Settings reset to defaults"
+  },
+  "backup": {
+    "created": "Backup created successfully",
+    "restored": "Backup restored successfully",
+    "failed": "Backup failed",
+    "not_found": "Backup not found"
+  },
+  "help": {
+    "title": "SecurityBot Help",
+    "categories": "Categories",
+    "use_help": "Use {prefix}help <category> for details"
+  }
+}

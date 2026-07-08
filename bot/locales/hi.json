@@ -1,0 +1,65 @@
+{
+  "bot": {
+    "name": "SecurityBot Enterprise",
+    "description": "एंटरप्राइज़-ग्रेड Discord सुरक्षा बॉट",
+    "online": "बॉट अब ऑनलाइन है",
+    "offline": "बॉट बंद हो रहा है"
+  },
+  "commands": {
+    "ban": "सदस्य को बैन करें",
+    "kick": "सदस्य को किक करें",
+    "mute": "सदस्य को म्यूट करें",
+    "warn": "सदस्य को चेतावनी दें",
+    "purge": "संदेशों को थोक में हटाएं",
+    "lock": "चैनल को लॉक करें",
+    "unlock": "चैनल को अनलॉक करें"
+  },
+  "permissions": {
+    "missing": "आपके पास इस कमांड का उपयोग करने की अनुमति नहीं है",
+    "admin_required": "व्यवस्थापक अनुमति आवश्यक",
+    "moderator_required": "मॉडरेटर अनुमति आवश्यक"
+  },
+  "security": {
+    "antinuke_triggered": "एंटी-न्यूक सुरक्षा सक्रिय",
+    "antiraid_triggered": "एंटी-रेड सुरक्षा सक्रिय",
+    "automod_violation": "ऑटोमॉड उल्लंघन का पता चला",
+    "antispam_triggered": "एंटीस्पैम सुरक्षा सक्रिय",
+    "antitamper_violation": "एंटीटैम्पर उल्लंघन का पता चला",
+    "user_quarantined": "उपयोगकर्ता को क्वारंटाइन किया गया है",
+    "user_banned": "उपयोगकर्ता को बैन कर दिया गया है",
+    "raid_detected": "रेड का पता चला",
+    "lockdown_initiated": "सर्वर लॉकडाउन शुरू",
+    "lockdown_lifted": "सर्वर लॉकडाउन हटा लिया गया"
+  },
+  "verification": {
+    "title": "सत्यापन आवश्यक",
+    "description": "सत्यापित करने के लिए बटन पर क्लिक करें",
+    "verified": "आप सत्यापित हो गए हैं",
+    "already_verified": "आप पहले से सत्यापित हैं",
+    "failed": "सत्यापन विफल",
+    "too_new": "आपका खाता बहुत नया है"
+  },
+  "errors": {
+    "unknown": "एक अज्ञात त्रुटि हुई",
+    "missing_permissions": "मेरे पास ऐसा करने की अनुमति नहीं है",
+    "user_not_found": "उपयोगकर्ता नहीं मिला",
+    "channel_not_found": "चैनल नहीं मिला",
+    "role_not_found": "भूमिका नहीं मिली"
+  },
+  "settings": {
+    "prefix_updated": "प्रीफ़िक्स अपडेट किया गया",
+    "language_updated": "भाषा अपडेट किया गया",
+    "settings_reset": "सेटिंग्स डिफ़ॉल्ट पर रीसेट कर दी गईं"
+  },
+  "backup": {
+    "created": "बैकअप सफलतापूर्वक बनाया गया",
+    "restored": "बैकअप सफलतापूर्वक पुनर्स्थापित किया गया",
+    "failed": "बैकअप विफल",
+    "not_found": "बैकअप नहीं मिला"
+  },
+  "help": {
+    "title": "SecurityBot सहायता",
+    "categories": "श्रेणियाँ",
+    "use_help": "विवरण के लिए {prefix}help <श्रेणी> का उपयोग करें"
+  }
+}

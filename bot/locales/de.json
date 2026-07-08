@@ -1,0 +1,65 @@
+{
+  "bot": {
+    "name": "SecurityBot Enterprise",
+    "description": "Discord-Sicherheitsbot auf Unternehmensebene",
+    "online": "Bot ist jetzt online",
+    "offline": "Bot wird heruntergefahren"
+  },
+  "commands": {
+    "ban": "Mitglied bannen",
+    "kick": "Mitglied kicken",
+    "mute": "Mitglied stummschalten",
+    "warn": "Mitglied verwarnen",
+    "purge": "Nachrichten massenhaft löschen",
+    "lock": "Kanal sperren",
+    "unlock": "Kanal entsperren"
+  },
+  "permissions": {
+    "missing": "Du hast keine Berechtigung, diesen Befehl zu verwenden",
+    "admin_required": "Administrator-Berechtigung erforderlich",
+    "moderator_required": "Moderator-Berechtigung erforderlich"
+  },
+  "security": {
+    "antinuke_triggered": "Anti-Nuke-Schutz ausgelöst",
+    "antiraid_triggered": "Anti-Raid-Schutz ausgelöst",
+    "automod_violation": "AutoMod-Verstoß erkannt",
+    "antispam_triggered": "AntiSpam-Schutz ausgelöst",
+    "antitamper_violation": "AntiTamper-Verstoß erkannt",
+    "user_quarantined": "Benutzer wurde unter Quarantäne gestellt",
+    "user_banned": "Benutzer wurde gebannt",
+    "raid_detected": "Raid erkannt",
+    "lockdown_initiated": "Server-Lockdown initiiert",
+    "lockdown_lifted": "Server-Lockdown aufgehoben"
+  },
+  "verification": {
+    "title": "Verifizierung erforderlich",
+    "description": "Klicke auf die Schaltfläche zur Verifizierung",
+    "verified": "Du wurdest verifiziert",
+    "already_verified": "Du bist bereits verifiziert",
+    "failed": "Verifizierung fehlgeschlagen",
+    "too_new": "Dein Konto ist zu neu"
+  },
+  "errors": {
+    "unknown": "Ein unbekannter Fehler ist aufgetreten",
+    "missing_permissions": "Ich habe keine Berechtigung dafür",
+    "user_not_found": "Benutzer nicht gefunden",
+    "channel_not_found": "Kanal nicht gefunden",
+    "role_not_found": "Rolle nicht gefunden"
+  },
+  "settings": {
+    "prefix_updated": "Präfix aktualisiert",
+    "language_updated": "Sprache aktualisiert",
+    "settings_reset": "Einstellungen auf Standardwerte zurückgesetzt"
+  },
+  "backup": {
+    "created": "Backup erfolgreich erstellt",
+    "restored": "Backup erfolgreich wiederhergestellt",
+    "failed": "Backup fehlgeschlagen",
+    "not_found": "Backup nicht gefunden"
+  },
+  "help": {
+    "title": "SecurityBot Hilfe",
+    "categories": "Kategorien",
+    "use_help": "Verwende {prefix}help <Kategorie> für Details"
+  }
+}

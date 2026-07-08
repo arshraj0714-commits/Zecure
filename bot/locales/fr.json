@@ -1,0 +1,65 @@
+{
+  "bot": {
+    "name": "SecurityBot Enterprise",
+    "description": "Bot Discord de sécurité de niveau entreprise",
+    "online": "Le bot est maintenant en ligne",
+    "offline": "Le bot s'éteint"
+  },
+  "commands": {
+    "ban": "Bannir un membre",
+    "kick": "Expulser un membre",
+    "mute": "Mettre en sourdine un membre",
+    "warn": "Avertir un membre",
+    "purge": "Supprimer des messages en masse",
+    "lock": "Verrouiller un canal",
+    "unlock": "Déverrouiller un canal"
+  },
+  "permissions": {
+    "missing": "Vous n'avez pas la permission d'utiliser cette commande",
+    "admin_required": "Permission administrateur requise",
+    "moderator_required": "Permission modérateur requise"
+  },
+  "security": {
+    "antinuke_triggered": "Protection Anti-Nuke déclenchée",
+    "antiraid_triggered": "Protection Anti-Raid déclenchée",
+    "automod_violation": "Violation AutoMod détectée",
+    "antispam_triggered": "Protection AntiSpam déclenchée",
+    "antitamper_violation": "Violation AntiTamper détectée",
+    "user_quarantined": "L'utilisateur a été mis en quarantaine",
+    "user_banned": "L'utilisateur a été banni",
+    "raid_detected": "Raid détecté",
+    "lockdown_initiated": "Verrouillage du serveur initié",
+    "lockdown_lifted": "Verrouillage du serveur levé"
+  },
+  "verification": {
+    "title": "Vérification requise",
+    "description": "Cliquez sur le bouton pour vérifier",
+    "verified": "Vous avez été vérifié",
+    "already_verified": "Vous êtes déjà vérifié",
+    "failed": "Vérification échouée",
+    "too_new": "Votre compte est trop récent"
+  },
+  "errors": {
+    "unknown": "Une erreur inconnue s'est produite",
+    "missing_permissions": "Je n'ai pas la permission de faire cela",
+    "user_not_found": "Utilisateur introuvable",
+    "channel_not_found": "Canal introuvable",
+    "role_not_found": "Rôle introuvable"
+  },
+  "settings": {
+    "prefix_updated": "Préfixe mis à jour",
+    "language_updated": "Langue mise à jour",
+    "settings_reset": "Paramètres réinitialisés aux valeurs par défaut"
+  },
+  "backup": {
+    "created": "Sauvegarde créée avec succès",
+    "restored": "Sauvegarde restaurée avec succès",
+    "failed": "Sauvegarde échouée",
+    "not_found": "Sauvegarde introuvable"
+  },
+  "help": {
+    "title": "Aide SecurityBot",
+    "categories": "Catégories",
+    "use_help": "Utilisez {prefix}help <catégorie> pour plus de détails"
+  }
+}

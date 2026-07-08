@@ -1,0 +1,65 @@
+{
+  "bot": {
+    "name": "SecurityBot Enterprise",
+    "description": "Bot de segurança Discord de nível empresarial",
+    "online": "O bot está agora online",
+    "offline": "O bot está desligando"
+  },
+  "commands": {
+    "ban": "Banir um membro",
+    "kick": "Expulsar um membro",
+    "mute": "Silenciar um membro",
+    "warn": "Avisar um membro",
+    "purge": "Excluir mensagens em massa",
+    "lock": "Bloquear um canal",
+    "unlock": "Desbloquear um canal"
+  },
+  "permissions": {
+    "missing": "Você não tem permissão para usar este comando",
+    "admin_required": "Permissão de administrador necessária",
+    "moderator_required": "Permissão de moderador necessária"
+  },
+  "security": {
+    "antinuke_triggered": "Proteção Anti-Nuke ativada",
+    "antiraid_triggered": "Proteção Anti-Raid ativada",
+    "automod_violation": "Violação do AutoMod detectada",
+    "antispam_triggered": "Proteção AntiSpam ativada",
+    "antitamper_violation": "Violação do AntiTamper detectada",
+    "user_quarantined": "Usuário foi colocado em quarentena",
+    "user_banned": "Usuário foi banido",
+    "raid_detected": "Raid detectado",
+    "lockdown_initiated": "Lockdown do servidor iniciado",
+    "lockdown_lifted": "Lockdown do servidor levantado"
+  },
+  "verification": {
+    "title": "Verificação necessária",
+    "description": "Clique no botão para verificar",
+    "verified": "Você foi verificado",
+    "already_verified": "Você já está verificado",
+    "failed": "Verificação falhou",
+    "too_new": "Sua conta é muito nova"
+  },
+  "errors": {
+    "unknown": "Ocorreu um erro desconhecido",
+    "missing_permissions": "Não tenho permissão para fazer isso",
+    "user_not_found": "Usuário não encontrado",
+    "channel_not_found": "Canal não encontrado",
+    "role_not_found": "Cargo não encontrado"
+  },
+  "settings": {
+    "prefix_updated": "Prefixo atualizado",
+    "language_updated": "Idioma atualizado",
+    "settings_reset": "Configurações redefinidas para o padrão"
+  },
+  "backup": {
+    "created": "Backup criado com sucesso",
+    "restored": "Backup restaurado com sucesso",
+    "failed": "Backup falhou",
+    "not_found": "Backup não encontrado"
+  },
+  "help": {
+    "title": "Ajuda do SecurityBot",
+    "categories": "Categorias",
+    "use_help": "Use {prefix}help <categoria> para detalhes"
+  }
+}
