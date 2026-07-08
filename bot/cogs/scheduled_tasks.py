@@ -126,11 +126,7 @@ class ScheduledTasksCog(commands.Cog):
     @commands.guild_only()
     @commands.has_permissions(administrator=True)
     async def schedule_task(self, ctx: commands.Context, action: str, *, schedule: str) -> None:
-        """Schedule a task. Examples:
-        !schedule backup in 2h
-        !schedule lock daily 03:00
-        !schedule announce "Hello world" in 1h
-        """
+        """Schedule a recurring or one-time task."""
         valid_actions = {"backup", "lock", "unlock", "announce"}
         if action not in valid_actions:
             await ctx.send(embed=error("Invalid Action", f"Valid actions: {', '.join(valid_actions)}"))
