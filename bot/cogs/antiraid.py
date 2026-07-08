@@ -314,7 +314,7 @@ class AntiRaidCog(commands.Cog):
     @commands.guild_only()
     @commands.has_permissions(administrator=True)
     async def antiraid_threshold(self, ctx: commands.Context, key: str, value: str) -> None:
-        """Set an AntiRaid threshold. Keys: join_threshold, join_window_seconds, leave_threshold, leave_window_seconds, bot_add_threshold, bot_add_window_seconds, new_account_hours, auto_clear_minutes, punishment, auto_lockdown_on_raid"""
+        """Set an AntiRaid threshold value."""
         thresholds = await self._get_thresholds(ctx.guild.id)
         if key not in thresholds:
             valid = ", ".join(f"`{k}`" for k in thresholds)
