@@ -408,6 +408,24 @@ class SettingsCog(commands.Cog):
         embed.set_thumbnail(url=self.bot.user.display_avatar.url if self.bot.user else None)
         await ctx.send(embed=embed)
 
+    @commands.command(name="sync")
+    @commands.guild_only()
+    @commands.is_owner()
+    async def sync_commands(self, ctx: commands.Context, scope: str = "guild") -> None:
+        """Manually sync slash commands. Owner only. Usage: .sync [guild|global]"""
+        msg = await ctx.send(embed=info("Syncing...", f"Syncing slash commands ({scope})..."))
+        try:
+            if scope == "global":
+                synced = await self.bot.tree.sync()
+                await msg.edit(embed=success("Synced", f"✅ Synced {len(synced)} commands globally.\nNote: Global sync may take up to 1 hour to appear."))
+            else:
+                # Guild sync (instant)
+                self.bot.tree.copy_global_to(guild=ctx.guild)
+                synced = await self.bot.tree.sync(guild=ctx.guild)
+                await msg.edit(embed=success("Synced", f"✅ Synced {len(synced)} commands to this server (instant).\nSlash commands should now be visible."))
+        except Exception as e:
+            await msg.edit(embed=error("Sync Failed", f"```\n{e}\n```"))
+
     @commands.hybrid_command(name="ping")
     async def ping(self, ctx: commands.Context) -> None:
         latency_ms = self.bot.latency * 1000
