@@ -232,7 +232,7 @@ This project includes a `nixpacks.toml` pre-configured for [Railway](https://rai
 2. **Create a new Railway project** → "Deploy from GitHub repo" → select your repo.
 
 3. **Add environment variables** (Railway dashboard → Variables tab):
-   - `DISCORD_TOKEN` = `MTUxODk2MzIxMTU4Njc2NDg1MQ.GKlWzj.pqIunDcusT2MnCES6FaWPrDjnmDjYU00f6fgAI`
+   - `DISCORD_TOKEN` = `YOUR_TOKEN_HERE`
    - `OWNER_ID` = `1498693593701945374`
    - (optional) `LOG_LEVEL` = `INFO` (or `DEBUG` for verbose logs)
    - (optional) `DEFAULT_PREFIX` = `!`
