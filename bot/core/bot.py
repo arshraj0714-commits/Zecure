@@ -83,18 +83,31 @@ class SecurityBot(commands.Bot):
             except Exception as e:
                 log.exception("Failed to load %s: %s", cog_path, e)
 
-        # Sync slash commands
+        # Sync slash commands — sync to each guild for INSTANT availability
+        # (global sync takes up to 1 hour; guild sync is instant)
         try:
-            synced = await self.tree.sync()
-            log.info("Synced %d slash commands", len(synced))
+            # First, copy global commands to each guild for instant availability
+            self.tree.copy_global_to(guild=None)
+            global_synced = await self.tree.sync()
+            log.info("Synced %d slash commands globally", len(global_synced))
         except Exception as e:
-            log.error("Failed to sync slash commands: %s", e)
+            log.error("Failed to sync slash commands globally: %s", e)
 
     async def on_ready(self) -> None:
         self.start_time = discord.utils.utcnow()
         log.info("Logged in as %s (ID: %s)", self.user, self.user.id)
         log.info("Connected to %d guilds, %d users", len(self.guilds), sum(g.member_count or 0 for g in self.guilds))
         log.info("Owner ID: %s", config.owner_id)
+
+        # Sync slash commands to EACH guild for INSTANT availability
+        # (global sync takes up to 1 hour; guild sync is instant)
+        for guild in self.guilds:
+            try:
+                self.tree.copy_global_to(guild=guild)
+                synced = await self.tree.sync(guild=guild)
+                log.info("Synced %d slash commands to guild: %s (%s)", len(synced), guild.name, guild.id)
+            except Exception as e:
+                log.error("Failed to sync to guild %s: %s", guild.id, e)
 
         # Set presence (Zecurity brand)
         try:
@@ -112,7 +125,7 @@ class SecurityBot(commands.Bot):
         await notify_owner(
             self,
             info(
-                "SecurityBot Online",
+                "Zecurity Online",
                 f"✅ Bot is now online.\n"
                 f"**Servers:** {len(self.guilds)}\n"
                 f"**Users:** {sum(g.member_count or 0 for g in self.guilds)}\n"
